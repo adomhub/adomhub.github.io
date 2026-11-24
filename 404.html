@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WABOUÉ · WABUƐ</title>
+<script>
+// L'ancien site ABUESA-IA a changé d'adresse : on renvoie vers WABOU-WAB- en gardant le reste du chemin.
+(function(){
+  var p = location.pathname, m = p.match(/^\/abuesa-ia-(\/.*)?$/i);
+  var dest = 'https://adomhub.github.io/WABOU-WAB-' + (m ? (m[1] || '/') : '/') + location.search + location.hash;
+  location.replace(dest);
+})();
+</script>
+</head>
+<body style="font-family:sans-serif;background:#1b4d30;color:#fff;text-align:center;padding:40px">
+<h1 style="color:#c7d92e">WABOUÉ</h1>
+<p>Le site a une nouvelle adresse :</p>
+<p><a style="color:#c7d92e;font-size:20px" href="https://adomhub.github.io/WABOU-WAB-/">adomhub.github.io/WABOU-WAB-</a></p>
+</body></html>
